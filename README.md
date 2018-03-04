@@ -1,22 +1,20 @@
 Chitter Challenge
 =================
 
-J Sheps report: I completed all the basic implementation on Saturday including validity and uniqueness of email/username.
-On Sunday there was an issue with validation (for some reason, I still don't know what) and so I reverted to an old commit and slowly reintroduced the code.  I spent 4 hours on Sunday morning trying this and the only 45mins that was worthwhile was narrowing it down to validation.  The 2nd version passed all the tests and worked locally despite the code being identical and my databases having been wiped several times.  There were a lot of tears and frustration and I basically hated my life most of the day.
+I completed all the basic implementation including validity and uniqueness of email/username.
+Then there was an issue with validation (for some reason, I still don't know what) and so I reverted to an old commit and slowly reintroduced the code.  I spent 4 hours trying to debug this and the only 45mins that was worthwhile was narrowing it down to validation.  The 2nd version passed all the tests and worked locally despite the code being identical and my databases having been wiped several times.  There were a lot of tears and frustration.
 
-I still plan to implement sign in/sign out but this will have to wait. I also want it to say who wrote the peeps.
+Points for development:
+* implement sign in/sign out
+* peeps have owners
+* use CSS
 
-Instructions:
--------
-Clone this repo.  Figure the rest out yourself.
+Very basic version deployed to heroku:
 https://chitter-challenge-jems2.herokuapp.com/
-
 
 Features:
 -------
-
 ```
-
 As a Maker
 So that I can let people know what I am doing  
 I want to post a message (peep) to chitter
@@ -32,7 +30,9 @@ I want to see the time at which it was made
 As a Maker
 So that I can post messages on Chitter as me
 I want to sign up for Chitter
-
+```
+Incomplete:
+```
 HARDER
 
 As a Maker
@@ -50,16 +50,8 @@ So that I can remember my username on Chitter
 I want to receive an email when I sign up
 ```
 
-Notes on functionality:
-------
-
-* Peeps (posts to chitter) have the name of the maker and their user handle.
-* You only can peep if you are logged in.
-
-
 Technologies used:
 -----
-
 * sinatra
 * capybara
 * heroku
@@ -67,3 +59,4 @@ Technologies used:
 * DataMapper
 * postgres
 * SQL
+* HTML
